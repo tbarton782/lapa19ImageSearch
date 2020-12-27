@@ -19,7 +19,7 @@ def compare(des1, des2, p):
             matchesMask[i] = [1, 0]
             c = c + 1
 
-    print "In sift :Matches :", c
+    print("In sift :Matches :", c)
 
     return c
 
@@ -28,7 +28,8 @@ def computeKp(path):
     img = cv2.imread(path)
 
     h1, w1 = img.shape[:2]
-    img = cv2.resize(img, (int(0.8 * w1), int(0.8 * h1)), interpolation=cv2.INTER_CUBIC)
-    sift = cv2.xfeatures2d.SIFT_create()
+    img = cv2.resize(img, (int(0.8 * w1), int(0.8 * h1)),
+                     interpolation=cv2.INTER_CUBIC)
+    sift = cv2.SIFT_create()
     kp1, des1 = sift.detectAndCompute(img, None)
     return des1
