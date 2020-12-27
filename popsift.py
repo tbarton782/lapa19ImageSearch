@@ -1,5 +1,6 @@
 import numpy as np
-import cv2, os
+import cv2
+import os
 from matplotlib import pyplot as plt
 
 
@@ -10,7 +11,7 @@ def compare(des1, des2, p):
 
     flann = cv2.FlannBasedMatcher(index_params, search_params)
     matches = flann.knnMatch(des1, des2, k=2)
-    matchesMask = [[0, 0] for i in xrange(len(matches))]
+    matchesMask = [[0, 0] for i in range(len(matches))]
 
     c = 0
 
