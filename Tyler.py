@@ -27,7 +27,7 @@ def annotate(self):
             tup = pickle.load(f)
         except:
             if maxp != -1:
-                print(self)
+                print("and the winner is...", self)
                 ind = self.rfind("/")
                 ind2 = -1
                 for i in ['1', '2', '3', '4', '5']:
