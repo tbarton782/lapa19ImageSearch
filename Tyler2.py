@@ -7,4 +7,13 @@ Enter the path to an image, and it returns the best match.
 
 from Tyler import *
 
-findMatch('testImages/QueryImg_Baby.jpg')
+findMatch('testImages/QueryImg_Test.jpg')
+
+
+
+"""
+Query Image File Names:
+    testImages/QueryImg_Baby.jpg
+    testImages/QueryImg_Dragon.jpg
+    testImages/QueryImg_Test.jpg  # This should fail to find a match
+"""

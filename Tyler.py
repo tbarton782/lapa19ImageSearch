@@ -31,14 +31,10 @@ def findMatch(self):
         try:
             tup = pickle.load(f)
         except:
-            if maxp != -1:
+            if maxp != -1 and maxp >5:
                 print()  # Blank line for readability
                 print("and the winner is...", self)  # Prints the matching image
-                ind = self.rfind("/")
-                ind2 = -1
-                for i in ['1', '2', '3', '4', '5']:
-                    ind2 = max(self.find(i), ind2)
-                #self.label_2.setText("The image is of : " + self[ind + 1:ind2])  # I don't know why this fails
             else:
-                self.label_2.setText("Sorry !No matches found")
+                print()  # Blank line for readability
+                print("Sorry !No matches found")
             break
