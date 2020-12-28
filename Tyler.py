@@ -6,6 +6,8 @@ This module is called by "Tyler2.py".
 """
 
 import pickle
+import cv2
+from matplotlib import pyplot as plt
 
 from popsift import computeDesc
 from popsift import compare
@@ -34,6 +36,11 @@ def findMatch(self):
             if maxp != -1 and maxp >5:
                 print()  # Blank line for readability
                 print("and the winner is...", self)  # Prints the matching image
+                match = cv2.imread(self)
+                #cv2.imshow('Matching Image', match)
+                plt.imshow(match)
+                plt.show()
+
             else:
                 print()  # Blank line for readability
                 print("Sorry !No matches found")
