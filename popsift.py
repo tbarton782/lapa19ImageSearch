@@ -1,7 +1,13 @@
+"""
+This module contains the "compare" and "computeDesc" functions, called
+by Tyler.py.
+"""
+
 import cv2
 
 
 def compare(des1, des2, p):
+    """Returns the number of matching descriptors"""
     FLANN_INDEX_KDTREE = 0
     index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)
     search_params = dict(checks=50)
@@ -17,12 +23,13 @@ def compare(des1, des2, p):
             matchesMask[i] = [1, 0]
             c = c + 1
 
-    print("In sift :Matches :", c)
+    print("Number of matching descriptors =", c)
 
     return c
 
 
-def computeKp(path):
+def computeDesc(path):
+    """Reads query image and returns the keypoint descriptors"""
     img = cv2.imread(path)
 
     # h1, w1 = img.shape[:2]
