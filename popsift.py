@@ -1,7 +1,4 @@
-import numpy as np
 import cv2
-import os
-from matplotlib import pyplot as plt
 
 
 def compare(des1, des2, p):
@@ -28,9 +25,8 @@ def compare(des1, des2, p):
 def computeKp(path):
     img = cv2.imread(path)
 
-    h1, w1 = img.shape[:2]
-    img = cv2.resize(img, (int(0.8 * w1), int(0.8 * h1)),
-                     interpolation=cv2.INTER_CUBIC)
+    # h1, w1 = img.shape[:2]
+    # img = cv2.resize(img, (int(0.8 * w1), int(0.8 * h1)), interpolation=cv2.INTER_CUBIC)
     sift = cv2.SIFT_create()
     kp1, des1 = sift.detectAndCompute(img, None)
     return des1

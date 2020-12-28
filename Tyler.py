@@ -1,14 +1,10 @@
-import numpy as np
 import pickle
-import cv2
-import os
-from matplotlib import pyplot as plt
 
 from popsift import computeKp
 from popsift import compare
 
 
-def annotate(self):
+def findMatch(self):
     userdes = computeKp(str(self))
     f = open('monuments.pkl', 'rb')
     tup = pickle.load(f)
@@ -38,5 +34,4 @@ def annotate(self):
                 self.label_2.setText("Sorry !No matches found")
             break
 
-
-annotate('QuerryImg_Baby.jpg')
+# findMatch('QuerryImg_Dragon.jpg')
