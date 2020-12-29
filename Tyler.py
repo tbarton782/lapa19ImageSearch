@@ -8,8 +8,8 @@ This module is called by "Tyler2.py".
 import pickle
 from PIL import Image
 
-from popsift import computeDesc
-from popsift import compare
+from siftFunctions import computeDesc
+from siftFunctions import compare
 
 
 def findMatch(self):
