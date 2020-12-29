@@ -22,7 +22,7 @@ def findMatch(self):
     maxp = -1
     while (tup):
         print(tup[1])
-        c = compare(userdes, tup[0], 0)  # Compares descriptors of query image with database
+        c = compare(userdes, tup[0], 0)  # Count number of matching descriptors
 
         if c > 0:
             if maxp < c:
@@ -32,14 +32,9 @@ def findMatch(self):
         try:
             tup = pickle.load(f)
         except:
-            if maxp != -1 and maxp >5:
+            if maxp != -1 and maxp >5:  # Exclude results with less than 5 matches
                 print()  # Blank line for readability
                 print("and the winner is...", self)  # Prints the matching image
-
-                #match = cv2.imread(self)
-                #cv2.imshow('Matching Image', match)
-                #plt.imshow(match)
-                #plt.show()
 
                 image = Image.open(self)
                 image.show()
