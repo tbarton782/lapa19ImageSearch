@@ -31,6 +31,7 @@ def compare(des1, des2, p):
 
 def computeDesc(path):
     """Reads query image and returns the keypoint descriptors"""
+    # Desriptors assign a numerical description to the area of the image the keypoint refers to
     img = cv2.imread(path)
 
     h1, w1 = img.shape[:2]
@@ -38,3 +39,5 @@ def computeDesc(path):
     sift = cv2.SIFT_create()
     kp1, des1 = sift.detectAndCompute(img, None)
     return des1
+
+# TODO: Tune FLANN according to https://www.docs.opencv.org/master/dc/dc3/tutorial_py_matcher.html
