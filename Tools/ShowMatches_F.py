@@ -33,7 +33,7 @@ def compare_images(image1, image2):
     # Apply ratio test
     good = []
     for m, n in matches:
-        if m.distance < 0.50 * n.distance:  # The example value was .75, tb
+        if m.distance < 0.70 * n.distance:  # The example value was .75, tb
             good.append([m])
             print(m.distance)  # for testing only
 
