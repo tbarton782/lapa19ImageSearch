@@ -10,7 +10,6 @@ This is a function that can be called.
 ---------------------------------------------------
 """
 
-import numpy as np  #I don't know why this was included, tb
 import cv2 as cv
 import matplotlib.pyplot as plt
 
