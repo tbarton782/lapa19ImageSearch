@@ -1,0 +1,9 @@
+1.  Play with compression size
+2.  How to append pickle file (ex: add new rocks)
+3.  How to read pickle file
+4.  While the algorithm works well handling scale and rotation (z-axis), it seems to
+struggle when the rock is rotated around the x or y-axis.  We may need to
+encourage users to take pictures at 90 degrees to the rock surface.
+5.  The algorithm also seems sensitive to shaking (blurry images)
+6.  Try circle cropping
+7.  General SIFT tuning

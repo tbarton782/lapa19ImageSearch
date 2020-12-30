@@ -24,7 +24,7 @@ def findMatch(self):
         print(tup[1])
         c = compare(userdes, tup[0], 0)  # Count number of matching descriptors
 
-        if c > 0:
+        if c > 10:  # Exclude results with less than 10 matches
             if maxp < c:
                 maxp = c
                 self = tup[1]
@@ -32,7 +32,8 @@ def findMatch(self):
         try:
             tup = pickle.load(f)
         except:
-            if maxp != -1 and maxp >5:  # Exclude results with less than 5 matches
+            #if maxp != -1 and maxp > 5:  # Exclude results with less than 5 matches
+            if maxp != -1:  # Exclude results with less than 5 matches
                 print()  # Blank line for readability
                 print("and the winner is...", self)  # Prints the matching image
 
