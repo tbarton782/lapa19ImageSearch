@@ -18,7 +18,8 @@ struggle when the rock is rotated around the x or y-axis.  May need to
 encourage users to take pictures at 90 degrees to the rock surface.
 
 The algorithm also seems sensitive to camera shaking (blurry images) and
-glossy coatings.  "Hold camera steady, and try to avoid glares."
+glossy coatings.  "Hold camera steady, and try to avoid glares."  Natural
+light also seems to improves performance.  
 
 Image compression and the descriptor distance threshold have a significant
 effect on speed and performance.  Optimal values appear to be 50% compression, 
