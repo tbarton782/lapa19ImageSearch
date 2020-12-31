@@ -4,6 +4,7 @@
 4.  While the algorithm works well handling scale and rotation (z-axis), it seems to
 struggle when the rock is rotated around the x or y-axis.  We may need to
 encourage users to take pictures at 90 degrees to the rock surface.
-5.  The algorithm also seems sensitive to shaking (blurry images)
+5.  The algorithm also seems sensitive to camera shaking (blurry images) and
+glossy coatings.  "Hold camera steady, and orientate the rock to avoid glares."
 6.  Try circle cropping
 7.  General SIFT tuning

@@ -14,10 +14,11 @@
 All images need to be cropped, but there are no size, scale, or rotation constraints
 
 While the algorithm works well handling scale and rotation (z-axis), it seems to
-struggle when the rock is rotated around the x or y-axis.  We may need to
+struggle when the rock is rotated around the x or y-axis.  May need to
 encourage users to take pictures at 90 degrees to the rock surface.
 
-The algorithm also seems sensitive to shaking (blurry images)
+The algorithm also seems sensitive to camera shaking (blurry images) and
+glossy coatings.  "Hold camera steady, and try to avoid glares."
 
 Image compression and the descriptor distance threshold have a significant
 effect on speed and performance.  Optimal values appear to be 50% compression, 
