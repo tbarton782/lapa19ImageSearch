@@ -30,6 +30,8 @@ and 70% descriptor distance.  Results below.
 
 ![](Documentation/MatchesGraph.png)
 
+![](Documentation/MatchesByRock.png)
+
 #### References:
 
 https://github.com/lapa19/Image-Search#image-search
