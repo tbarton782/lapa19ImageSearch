@@ -24,7 +24,7 @@ def findMatch(self):
         print(tup[1])
         c = compare(userdes, tup[0], 0)  # Count number of matching descriptors
 
-        if c > 6:  # Exclude results with less than 10 matches
+        if c > 8:  # Exclude results with less than __ matches
             if maxp < c:
                 maxp = c
                 self = tup[1]
