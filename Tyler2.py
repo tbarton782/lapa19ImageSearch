@@ -9,7 +9,7 @@ from Tyler import *
 
 
 
-imageName = 'Baby'
+imageName = 'Bot2'
 
 findMatch('testImages/QueryImg_'+imageName+'.jpg')
 
