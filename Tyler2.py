@@ -9,7 +9,7 @@ from Tyler import *
 
 
 
-imageName = 'SB_Large'
+imageName = 'Test'
 
 findMatch('testImages/QueryImg_'+imageName+'.jpg')
 
@@ -20,8 +20,8 @@ Query Image File Names:
     Baby
     Dragon
     Test  # This should always fail to find a match
-    Slug  # This unfortunately returns the wrong rock (@ 70%, and >6)
-    Bluelines  #This fails to find a match, but should not (@ 70%, and >6)
+    Slug
+    Bluelines
     Flower
     SB_Small
     SB_Large
