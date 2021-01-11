@@ -9,7 +9,7 @@ from Tyler import *
 
 
 
-imageName = 'Test'
+imageName = 'Biden'
 
 findMatch('testImages/QueryImg_'+imageName+'.jpg')
 
@@ -32,5 +32,7 @@ Query Image File Names:
     Dots
     Flag
     Supernova
-    Unicorn    
+    Unicorn
+    Biden
+    Fall    
 """
