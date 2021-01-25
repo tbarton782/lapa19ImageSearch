@@ -3,7 +3,6 @@ This code captures an image from the video stream from IPWebcam on a
 mobile phone
 
 https://www.studytonight.com/post/capture-videos-and-images-with-python-part2
-
 """
 
 import cv2
@@ -16,6 +15,8 @@ while (result):
     result = False
 videoCaptureObject.release()
 cv2.destroyAllWindows()
+
+
 
 """
 This codes just shows the video stream
