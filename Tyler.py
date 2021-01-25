@@ -32,8 +32,7 @@ def findMatch(self):
         try:
             tup = pickle.load(f)
         except:
-            #if maxp != -1 and maxp > 5:  # Exclude results with less than 5 matches
-            if maxp != -1:  # Exclude results with less than 5 matches
+            if maxp != -1:
                 print()  # Blank line for readability
                 print("and the winner is...", self)  # Prints the matching image
 
