@@ -9,11 +9,13 @@ import cv2
 def compare(des1, des2, p):
     """Returns the number of matching descriptors"""
     FLANN_INDEX_KDTREE = 1  # I don't know what this does
-    index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)  #Tried Trees=1-500, did not change much
+    index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)  # Tried Trees=1-500, did not change much
     search_params = dict(checks=50)  # Tried 1-1000, does not affect much
 
-    flann = cv2.FlannBasedMatcher(index_params, search_params)
-    matches = flann.knnMatch(des1, des2, k=2)
+    #flann = cv2.FlannBasedMatcher(index_params, search_params)
+    #matches = flann.knnMatch(des1, des2, k=2)
+    bf = cv2.BFMatcher()  # Test of Brute-Force Matching
+    matches = bf.knnMatch(des1, des2, k=2)  # Test Brute-Force Matching
     matchesMask = [[0, 0] for i in range(len(matches))]
 
     c = 0
