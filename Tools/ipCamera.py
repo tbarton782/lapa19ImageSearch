@@ -1,6 +1,5 @@
 """
-This code captures an image from the video stream from IPWebcam on a
-mobile phone
+This code captures an image from the video stream from IPWebcam
 
 https://www.studytonight.com/post/capture-videos-and-images-with-python-part2
 """
