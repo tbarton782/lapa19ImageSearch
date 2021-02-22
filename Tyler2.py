@@ -35,8 +35,6 @@ Query Image File Names:
     Unicorn
     Biden
     Fall
-    Ghost
-    AwesomeDay
     Sunset
     Ocean
     Aurora    
