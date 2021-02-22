@@ -9,7 +9,7 @@ from Tyler import *
 
 
 
-imageName = 'Supernova'
+imageName = 'Aurora'
 
 findMatch('testImages/QueryImg_'+imageName+'.jpg')
 
@@ -36,5 +36,8 @@ Query Image File Names:
     Biden
     Fall
     Ghost
-    AwesomeDay    
+    AwesomeDay
+    Sunset
+    Ocean
+    Aurora    
 """
