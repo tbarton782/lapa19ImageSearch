@@ -1,7 +1,6 @@
 """
 -------------------- DESCRIPTION ------------------
-This is a function that can be called.
-
+This is a
 ------------------ DATE & AUTHOR ------------------
 12/22/2020, Tyler
 
@@ -32,7 +31,7 @@ def compare_images(image1, image2):
     # Apply ratio test
     good = []
     for m, n in matches:
-        if m.distance < 0.70 * n.distance:  # Filters out weak (large distance) matches
+        if m.distance < 0.65 * n.distance:  # Filters out weak (large distance) matches
             good.append([m])
             print(m.distance)  # for testing only
 

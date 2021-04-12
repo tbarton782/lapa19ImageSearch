@@ -4,7 +4,7 @@ This code shows where all the keypoints are
 
 import cv2
 
-img = cv2.imread('../testImages/QueryImg_Ocean.jpg')
+img = cv2.imread('../testImages/QueryImg_Baby.jpg')
 gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 sift = cv2.SIFT_create()

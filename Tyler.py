@@ -21,7 +21,7 @@ def findMatch(self):
 
     maxp = -1
     while (tup):
-        # print(tup[1])  Uncomment this to show the image name
+        print(tup[1])  # Uncomment this to show the image name
         c = compare(userdes, tup[0], 0)  # Count number of matching descriptors
 
         if c > 8:  # Exclude results with less than __ matches

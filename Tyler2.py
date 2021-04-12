@@ -9,7 +9,7 @@ from Tyler import *
 
 
 
-imageName = 'Aurora'
+imageName = 'Orange'
 
 findMatch('testImages/QueryImg_'+imageName+'.jpg')
 
@@ -38,4 +38,6 @@ Query Image File Names:
     Sunset
     Ocean
     Aurora    
+    Eye
+    Orange
 """
